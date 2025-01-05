@@ -1,7 +1,6 @@
-h1 {
-  font-family:"Brush Script MT", "Lucida Handwriting";
+html {
+  scroll-behavior: smooth;
 }
-
 body {
-    background-color: lightblue;
+  font-family: 'Montserrat', sans-serif;
 }
