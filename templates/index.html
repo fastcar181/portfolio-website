@@ -4,40 +4,61 @@
     <title>Grace Le's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="../resources/favicon.ico">
     <link rel="stylesheet" href="../css/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> 
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
 <body>
     <header>
         <nav>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
         </nav>
     </header>
     <h1>Grace Le | Computer Science Portfolio</h1>
     <section id="about">
         <h2>About Me</h2>
-        <ol>
-            <li>name, education, and some basic intro stuff</li>
-            <li>resume pdf with some smooth effects that highlight areas with little additional text bubbles that appear</li>
-        </ol>
+        <p>Hello, my name is Grace Le, and I'm currently a second-year computer science student at Carleton University in Ottawa, Ontario! This website is going to showcase all my notable projects. It's currently in its early stages, so I look forward to continuously updating it throughout the semester by adding more projects and updating the UI!</p>
+        <p>Click the icon below to contact me through email!</p>
+        <a href="mailto:gracele@cmail.carleton.ca">
+            <img src="../resources/IconEmail.png" width="50" height="50" alt="Email Icon">
+        </a>
     </section>
     <section id="projects">
-        <h2>Projects</h2>
-        <h3>Project #1</h3>
-        <p>description, a smooth carousel photo, and highlights</p>
-        <h3>Project #2</h3>
-        <p>description and a smooth carousel photo, and highlights</p>
-        <h3>Project #3</h3>
-        <p>description and a smooth carousel photo, and highlights</p>
+        <h2>Project #1: Portfolio Website</h2>
+        <h3>Description:</h3>
+        <p>Languages: HTML, CSS, JavaScript</p>
+        <p>Software involved: Git, GitHub, Visual Studio Code</p>
+        <p>I started off this website with basic HTML, slowly adding CSS and JavaScript to give the portfolio a nicer UI.</p>
+        <h3>Highlights:</h3>
+        <p>Git: I used Git to help me develop this website on my laptop and desktop computer.</p>
+        <h3>Challenges:</h3>
+        <p>Carousel: Developing the image carousel seen under Project #2 was difficult, but I searched all over the internet to help me develop a solution that worked.</p>
+        <h3>Showcase:</h3>
+        <a href="https://github.com/fastcar181/portfolio-website">Link to GitHub Repo</a>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <ol>
-            <li>email</li>
-            <li>phone number</li>
-            <li>github link</li>
-        </ol>
+    <section>
+        <h2>Project #2: Robot Delivery Program</h2>
+        <h3>Description:</h3>
+        <p>Languages: Java</p>
+        <p>Software involved: Webots</p>
+        <p>This was a final team project for an introduction to robotics course (COMP 2801). The purpose of this program was to implement a search algorithm and collision-free movement that would allow the robot to collect green jars and deliver them to the dropoff location, stopping the simulation once two green jars were delivered.</p>
+        <h3>Highlights:</h3>
+        <p>LiDAR: I implemented a simple LiDAR detection system to help prevent collisions.</p>
+        <p>Camera detection: I utilized the built-in Webots camera to help with the process of identifying green jars and the green dropoff location.</p>
+        <p>State machines: I planned out state machines for the robot's various states before implementation, ensuring all cases were covered.</p>
+        <h3>Challenges:</h3>
+        <p>Collisions: To create a reliable collision-free movement, I implemented both distance and LiDAR sensors and recorded the numbers for the sensors to gauge the numbers to use in the program.</p>
+        <h3>Showcase:</h3>
+        <div class="carousel">
+            <button class="previous" onclick="previousSlide()">❮</button>
+            <div class="carousel-images">
+                <img src="../resources/RobotDeliveryProgram1.png" alt="Robot Delivery Program Screenshot 1">
+                <img src="../resources/RobotDeliveryProgram2.png" alt="Robot Delivery Program Screenshot 2">
+                <img src="../resources/RobotDeliveryProgram3.png" alt="Robot Delivery Program Screenshot 3">
+            </div>
+            <button class="next" onclick="nextSlide()">❯</button>
+        </div>
+        <a href="https://youtu.be/ABEUz5tVE8Y">Link to Simulation Video</a>
     </section>
+    <script src="../js/script.js"></script>
 </body>
 </html>

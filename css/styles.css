@@ -1,6 +1,89 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  background-color: rgb(197, 189, 179);
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+header nav a{
+  color: rgb(0, 0, 0);
+}
+
+header nav a:hover {
+  background-color: rgb(184, 173, 159);
+  padding: 2px;
+  border-radius: 2px;
+}
+
+h1, h2, h3, p {
+  text-align: center;
+}
+
+section {
+  background-color: rgb(243, 240, 240);
+  box-shadow: 5px 10px 10px rgb(216, 214, 214);
+  padding: 15px;
+  border-radius: 5px;
+  margin: 30px;
+}
+
+section a {
+  text-align: center;
+  display: block;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 550px;
+  height: 457px;
+  margin: 20px auto;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 1650px;
+}
+
+.carousel-images img {
+  width: 550px;
+  height: 457px;
+  object-fit: cover;
+}
+
+button.previous, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+button.previous {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+button.previous:hover, button.next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
